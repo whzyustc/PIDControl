@@ -1,11 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webpack Typescript Vue Project</title>
 </head>
+
 <body>
-    <div id="example">{{message}}</div>
+    <div id="example">
+        {{message}}
+        <form id='setpos'>
+            <label for='targetpos'>target postion(0-100)</label>
+            <input type="number" name="targetpos" id="targetpos" value="60">
+            </br>
+            <label for="boxpos">bos postion(0-100)</label>
+            <input type="number" name="boxpos" id="boxpos" value="80">
+            <button type="submit" id="possubmit">submit</button>
+        </form>
+        <div id='targetline'>
+            <form id='setpos'>
+                <label for='kp'>kp:</label>
+                <input type="text" name="kp" id="kp" value="0.02">
+                </br>
+                <label for='ki'>ki:</label>
+                <input type="text" name="ki" id="ki" value="0.001">
+                </br>
+                <label for='kd'>kd:</label>
+                <input type="text" name="kd" id="kd" value="500">
+                <button type="submit" id="ksubmit">submit</button>
+            </form>
+        </div>
+        <div id='controlbox'>
+            <div class='pin'></div>
+        </div>
+
+
+    </div>
 </body>
+
 </html>
